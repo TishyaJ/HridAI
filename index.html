@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HridAI - Neuro-Inspired Adaptive Decision System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">HridAI</div>
+            <ul class="nav-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#pipeline">Pipeline</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#phases">Development</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">Neuro-Inspired Adaptive Decision System</h1>
+            <p class="hero-subtitle">Using Spiking Neural Networks for Cellular Decision-Making</p>
+            <div class="hero-tags">
+                <span class="tag">Biotechnology</span>
+                <span class="tag">Neural Networks</span>
+                <span class="tag">AI</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="overview" class="section">
+            <h2>Overview</h2>
+            <div class="card">
+                <p>Modern biotechnology increasingly relies on intelligent systems to model cellular decision-making
+                    under noisy biochemical environments.</p>
+                <p>Inspired by neural spiking and synaptic plasticity, this project presents a minimal Neuro-AI model
+                    that simulates adaptive cellular responses using spiking dynamics and reward-driven learning.</p>
+            </div>
+        </section>
+
+        <section id="pipeline" class="section">
+            <h2>System Pipeline</h2>
+            <div class="card pipeline-card">
+                <div class="pipeline">
+                    <div class="pipeline-step">
+                        <div class="step-number">1</div>
+                        <h3>Environment / Data</h3>
+                        <p>Input signals and biochemical events</p>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">2</div>
+                        <h3>Neural Encoding</h3>
+                        <p>Convert to spike trains</p>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">3</div>
+                        <h3>Spiking Neural Network</h3>
+                        <p>Process through SNN layers</p>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">4</div>
+                        <h3>Plasticity</h3>
+                        <p>STDP / Reward-modulated learning</p>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">5</div>
+                        <h3>Decision / Action</h3>
+                        <p>Output cellular response</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-stack" class="section">
+            <h2>Technical Stack</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Programming & Tools</h3>
+                    <ul>
+                        <li>Python (mandatory)</li>
+                        <li>PyTorch (base DL framework)</li>
+                        <li>Brian2 / Norse / SpikingJelly (SNNs)</li>
+                        <li>NumPy, SciPy (signal & math)</li>
+                        <li>Matplotlib / Seaborn (analysis)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Learning Paradigms</h3>
+                    <ul>
+                        <li>Spiking Neural Networks (SNNs)</li>
+                        <li>Spike-Timing Dependent Plasticity (STDP)</li>
+                        <li>Reinforcement Learning</li>
+                        <li>Reward-modulated STDP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="section">
+            <h2>Interactive Demo</h2>
+            <div class="card">
+                <h3>Simulated Cellular Signaling Spikes</h3>
+                <p>This visualization shows burst-like biochemical events over time, where signal events above a
+                    threshold (0.8) are detected as spikes.</p>
+                <div class="demo-container">
+                    <canvas id="spikesChart"></canvas>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Neuro-Inspired Cellular Decision Output</h3>
+                <p>The system uses a Leaky Integrate-and-Fire (LIF) model to accumulate signals and make decisions based
+                    on threshold activation.</p>
+                <div class="demo-container">
+                    <canvas id="decisionsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="phases" class="section">
+            <h2>Development Phases</h2>
+            <div class="phases-grid">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <span class="phase-number">Phase 1</span>
+                        <h3>Neuro Foundations</h3>
+                    </div>
+                    <ul>
+                        <li><strong>Neuron models:</strong> Leaky Integrate-and-Fire (LIF)</li>
+                        <li><strong>Encoding:</strong> Rate coding, Temporal coding</li>
+                        <li><strong>Learning:</strong> Hebbian learning, STDP rule</li>
+                    </ul>
+                    <div class="deliverable">
+                        <strong>Deliverable:</strong> Single neuron + spike visualization
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <span class="phase-number">Phase 2</span>
+                        <h3>Build a Spiking Network</h3>
+                    </div>
+                    <ul>
+                        <li>Multi-layer SNN</li>
+                        <li>Input spike trains</li>
+                        <li>STDP-based weight updates</li>
+                    </ul>
+                    <div class="deliverable">
+                        <strong>Deliverable:</strong> SNN learns a simple pattern (binary classification)
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <span class="phase-number">Phase 3</span>
+                        <h3>Neuro-Inspired Decision System</h3>
+                    </div>
+                    <ul>
+                        <li>Add reward → Neuro-AI integration</li>
+                        <li><strong>Environment:</strong> Gridworld / control task</li>
+                        <li>Reward-modulated STDP</li>
+                    </ul>
+                    <div class="deliverable">
+                        <strong>Deliverable:</strong> Agent improves decisions over episodes
+                    </div>
+                </div>
+
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <span class="phase-number">Phase 4</span>
+                        <h3>Evaluation & Explainability</h3>
+                    </div>
+                    <ul>
+                        <li><strong>Compare:</strong> ANN vs SNN</li>
+                        <li><strong>Metrics:</strong> Energy efficiency, Learning speed, Stability</li>
+                        <li><strong>Visualize:</strong> Spike rasters, Weight evolution</li>
+                    </ul>
+                    <div class="deliverable">
+                        <strong>Deliverable:</strong> Graphs + Technical report
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 HridAI Project. Neuro-Inspired Adaptive Decision System.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
